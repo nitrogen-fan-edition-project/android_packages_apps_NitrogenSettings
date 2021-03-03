@@ -59,6 +59,13 @@
             android:fragment="com.nitrogen.settings.fragments.LockScreenSettings"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
+        <!-- Animation -->
+       <Preference
+            android:key="animations_category"
+            android:title="@string/animation_settings_title"
+            android:fragment="com.nitrogen.settings.fragments.AnimationSettings"
+            android:icon="@drawable/ic_settings_animation"/>
+
         <!-- Power Menu -->
         <Preference
             android:key="powermenu__category"
@@ -93,6 +100,19 @@
             android:persistent="false"
             android:title="@string/device_part_title"
             android:icon="@drawable/ic_settings_device">
-            <intent android:action="android.intent.action.MAIN"/>
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="org.omnirom.device"
+                 android:targetClass="org.omnirom.device.DeviceSettings"/>
+        </Preference>
+
+        <!-- Device Part -->
+        <Preference
+            android:key="device_part2"
+            android:persistent="false"
+            android:title="@string/device_part_title"
+            android:icon="@drawable/ic_settings_device">
+            <intent android:action="android.intent.action.MAIN"
+                 android:targetPackage="org.lineageos.settings"
+                 android:targetClass="org.lineageos.settings.MainActivity"/>
         </Preference>
 </PreferenceScreen>

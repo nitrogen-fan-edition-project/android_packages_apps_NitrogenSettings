@@ -32,4 +32,42 @@
         android:title="@string/qs_show_auto_brightness_title"
         android:summary="@string/qs_show_auto_brightness_summary"
         android:defaultValue="true" />
+
+     <PreferenceCategory
+        android:key="quick_settings_general_category"
+        android:title="@string/general_category">
+
+        <com.nitrogen.settings.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="quick_settings_animations"
+        android:title="@string/qs_tile_animation_title"/>
+
+        <ListPreference
+            android:key="qs_tile_animation_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="qs_tile_animation_duration"
+            android:title="@string/qs_tile_animation_duration_title"
+            android:entries="@array/qs_tile_animation_duration_entries"
+            android:entryValues="@array/qs_tile_animation_duration_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="qs_tile_animation_interpolator"
+            android:title="@string/qs_tile_animation_interpolator_title"
+            android:entries="@array/qs_tile_animation_interpolator_entries"
+            android:entryValues="@array/qs_tile_animation_interpolator_values"
+            android:persistent="false" />
+
 </PreferenceScreen>
