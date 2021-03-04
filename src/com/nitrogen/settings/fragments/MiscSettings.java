@@ -26,7 +26,7 @@ import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.nitrogen.settings.preference.CustomSeekBarPreference;
+import com.nitrogen.settings.preferences.CustomSeekBarPreference;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
@@ -38,8 +38,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PULSE_BRIGHTNESS = "ambient_pulse_brightness";
     private static final String KEY_DOZE_BRIGHTNESS = "ambient_doze_brightness";
     
-    private static final String KEY_PULSE_BRIGHTNESS = "ambient_pulse_brightness";
-    private static final String KEY_DOZE_BRIGHTNESS = "ambient_doze_brightness";
+    private CustomSeekBarPreference mPulseBrightness;
+    private CustomSeekBarPreference mDozeBrightness;
 
     @Override
     public void onCreate(Bundle icicle) {
