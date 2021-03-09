@@ -307,7 +307,7 @@
         <item>org.omnirom.device.DeviceSettings</item>
         <item>org.lineageos.settings.device.DeviceSettingsActivity</item>
         <item>org.lineageos.settings.MainActivity</item>
-
+    </string-array>
     <!-- Switch styles -->
     <string-array name="switch_style_entries" translatable="false">
         <item>@string/switch_default</item>
